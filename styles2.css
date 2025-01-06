@@ -1,0 +1,64 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fb;
+    color: #333;
+}
+
+.header {
+    background-color: #4CAF50;
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+}
+
+.hero-section {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero-section .cta-btn {
+    background-color: #ff5733;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+#features {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto;
+}
+
+.feature {
+    text-align: center;
+    padding: 20px;
+    width: 30%;
+}
+
+#courses {
+    background-color: #ffffff;
+    padding: 30px;
+}
+
+.course-card {
+    background-color: #f0f0f0;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}

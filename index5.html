@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Language Quiz</title>
+    <link rel="stylesheet" href="style5.css">
+    <style>
+         .button-container {
+            position: fixed;
+            bottom: 7px;
+            right: 20px;
+            text-align: center;
+        }
+
+        /* Style for the button */
+        .next-button {
+            padding: 10px 20px;
+            background-color: #888;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        /* Hover effect for the button */
+        .next-button:hover {
+            background-color: #888;
+        }
+    </style>
+   
+
+
+</head>
+<body>
+    <div class="container">
+        <h1>Programming Language Quiz</h1>
+
+        <!-- Language selection -->
+        <div class="language-selection">
+            <h2>Select a language:</h2>
+            <button onclick="startQuiz('C')">C</button>
+            <button onclick="startQuiz('C++')">C++</button>
+            <button onclick="startQuiz('Java')">Java</button>
+            <button onclick="startQuiz('HTML')">HTML</button>
+            <button onclick="startQuiz('CSS')">CSS</button>
+            <button onclick="startQuiz('JavaScript')">JavaScript</button>
+        </div>
+
+        <!-- Quiz Form -->
+        <div id="quiz-container" class="quiz-container" style="display: none;">
+            <h2 id="quiz-title"></h2>
+            <form id="quiz-form">
+                <!-- Questions will be inserted here dynamically -->
+            </form>
+            <button onclick="submitQuiz()">Submit Quiz</button>
+        </div>
+
+        <!-- Result -->
+        <div id="result-container" class="result-container" style="display: none;">
+            <h2 id="result-text"></h2>
+        </div>
+    </div>
+    <div class="button-container">
+        <a href="http://127.0.0.1:5500/index4.html">
+        <button class="next-button" onclick="window.location.href='course_page.html';">Next Page</button>
+        </a>
+    </div>
+
+    <script src="file5.js"></script>
+</body>
+</html>

@@ -1,0 +1,301 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #2a2a2a;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 2rem;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 1rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #2980b9;
+}
+
+
+.profile-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #888; /* Default background color */
+    border: none; /* Removes border */
+    display: flex; /* Centers content */
+    justify-content: center; /* Horizontally centers text */
+    align-items: center; /* Vertically centers text */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1.5rem; /* Text size */
+    color: #fff; /* Text color */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+/* Hover Effect */
+.profile-btn:hover {
+    background-color: #555; /* Darker background on hover */
+    transform: scale(1.1); /* Enlarges the button slightly */
+}
+
+
+
+/* Text that will appear when the button is clicked */
+#platform-text {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Hero Section */
+
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-radius: 30px;
+    overflow: hidden; /* To keep rounded edges */
+    background-color: #333; /* Dark background for the search bar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar input {
+    width: 400px; /* Increased width for better visibility */
+    padding: 0.8rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #333;
+    border-radius: 30px 0 0 30px; /* Rounded left corners */
+}
+
+.search-bar button {
+    background-color: #888;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 0 30px 30px 0; /* Rounded right corners */
+    color: #000;
+    transition: background-color 0.3s, transform 0.3s;
+}
+/* Button Hover Effect */
+.search-bar button:hover {
+    background-color: #888;
+    transform: scale(1.05); /* Slight scaling effect */
+}
+
+
+
+.search-bar input::placeholder {
+    color: #ccc;
+}
+
+
+.bottom-right-button {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: grey;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.bottom-left-text {
+    position: fixed; /* Fixes the text position relative to the browser window */
+    bottom: 10px; /* Positions the text 10px from the bottom */
+    left: 10px; /* Positions the text 10px from the right */
+    text-decoration: underline; /* Underlines the text */
+    font-size: 30px; /* Sets the font size */
+    color: white; /* Text color */
+}
+.bottom-left-button:hover {
+    background-color: darkgrey;
+}
+.image-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensures images wrap to the next row */
+    justify-content: flex-start; /* Aligns images to the left */
+    gap: 20px; /* Adds space between the images */
+    margin-top: 20px; /* Adds space from the top of the container */
+}
+
+/* Style for each image */
+.image-container img {
+    width: 390px; /* Adjusts image width */
+    height: 250px; /* Adjusts image height */
+    object-fit: cover; /* Ensures the image covers the given width/height */
+    border-radius: 8px; /* Optional: Adds rounded corners to the images */
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.background {
+    position: fixed; /* Keeps the image static while scrolling */
+    top: 0;
+    left: 0;
+    width: 100%; /* Stretches the image to fit the full width */
+    height: 5%; /* Stretches the image to fit the full height */
+    background-image: url('study\ website\ image.jpg'); /* Replace with your image path */
+    background-size: cover; /* Scales the image proportionally to cover the area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling of the image */
+}
+
+.content {
+    position: relative; /* Ensures content is layered above the background */
+    text-align: left;
+    color: blue;
+    padding: 0px;
+    
+    background-color: rgba(0, 0, 0, 0.5); /* Optional semi-transparent overlay for readability */
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for the button container */
+.image-button {
+    position: absolute; /* Ensures the button is positioned relative to the page */
+    top: 10px; /* Distance from the top */
+    left: 10px; /* Distance from the left */
+    width: 50px; /* Width of the button */
+    height: 50px; /* Height of the button */
+    border: none; /* Removes default border */
+    background: none; /* Removes background color */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+/* Styling for the round image */
+.image-button img {
+    width: 100%; /* Makes the image fill the button */
+    height: 100%; /* Ensures image height matches button size */
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image fits within the button */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a slight shadow for effect */
+}
+
+
+
+.rounded-image {
+    width: 130px; /* Set the desired width of the image */
+    height: 130px; /* Set the desired height of the image */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fits inside the circle */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Adds a shadow for effect */
+    position: absolute; /* Allows precise placement */
+    top: 80px; /* Distance from the top */
+    right: 15px; /* Distance from the right */
+}
+.rounded-image1{
+    width: 130px; /* Set the desired width of the image */
+    height: 130px; /* Set the desired height of the image */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fits inside the circle */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Adds a shadow for effect */
+    position: absolute; /* Allows precise placement */
+    top: 145px; /* Distance from the top */
+    right: 200px; /* Distance from the right */
+}
+.rounded-image2{
+    width: 130px; /* Set the desired width of the image */
+    height: 130px; /* Set the desired height of the image */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fits inside the circle */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Adds a shadow for effect */
+    position: absolute; /* Allows precise placement */
+    top: 240px; /* Distance from the top */
+    right: 15px; /* Distance from the right */
+}
+.rounded-image3{
+    width: 130px; /* Set the desired width of the image */
+    height: 130px; /* Set the desired height of the image */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fits inside the circle */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Adds a shadow for effect */
+    position: absolute; /* Allows precise placement */
+    top: 360px; /* Distance from the top */
+    right: 200px; /* Distance from the right */
+}
+.rounded-image4{
+    width: 130px; /* Set the desired width of the image */
+    height: 130px; /* Set the desired height of the image */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fits inside the circle */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Adds a shadow for effect */
+    position: absolute; /* Allows precise placement */
+     /* Distance from the top */
+    top:440px;
+    right: 20px; /* Distance from the right */
+}
+.rounded-image5{
+    width: 130px; /* Set the desired width of the image */
+    height: 130px; /* Set the desired height of the image */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fits inside the circle */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Adds a shadow for effect */
+    position: absolute; /* Allows precise placement */
+    bottom: 20px; /* Distance from the top */
+    right: 200px; /* Distance from the right */
+}
+
